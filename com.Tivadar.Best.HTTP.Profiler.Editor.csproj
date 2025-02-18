@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D9EEC289-CA96-BCB3-BEAA-DFC8A3C3ED8F}</ProjectGuid>
+    <ProjectGuid>{D0E84C1E-A424-EDEE-E4A3-950FC525D40A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>com.Tivadar.Best.HTTP.Profiler.Editor</AssemblyName>
@@ -1026,7 +1026,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="com.Tivadar.Best.HTTP.csproj">
-      <Project>{77CE09C2-BF66-AD01-B8BE-67EADE52CA37}</Project>
+      <Project>{6513A9A1-FE0C-542F-FDE3-D548A8844FCA}</Project>
       <Name>com.Tivadar.Best.HTTP</Name>
     </ProjectReference>
   </ItemGroup>

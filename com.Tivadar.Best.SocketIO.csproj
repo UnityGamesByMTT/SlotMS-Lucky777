@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>Best.SocketIO</RootNamespace>
-    <ProjectGuid>{E42F8B68-133C-2E32-A3C1-70DE2F539386}</ProjectGuid>
+    <ProjectGuid>{083F3C57-8B6E-3647-B811-36AA98285AD7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>com.Tivadar.Best.SocketIO</AssemblyName>
@@ -1011,11 +1011,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="com.Tivadar.Best.HTTP.csproj">
-      <Project>{77CE09C2-BF66-AD01-B8BE-67EADE52CA37}</Project>
+      <Project>{6513A9A1-FE0C-542F-FDE3-D548A8844FCA}</Project>
       <Name>com.Tivadar.Best.HTTP</Name>
     </ProjectReference>
     <ProjectReference Include="com.Tivadar.Best.WebSockets.csproj">
-      <Project>{E206FFF7-ABE1-18EB-82BC-961687FBE3A5}</Project>
+      <Project>{5CC9850E-2A6A-AE37-C3AC-D52F07C7A19D}</Project>
       <Name>com.Tivadar.Best.WebSockets</Name>
     </ProjectReference>
   </ItemGroup>

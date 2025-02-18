@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4795BA57-0712-7F94-5781-F0C41F72BF9C}</ProjectGuid>
+    <ProjectGuid>{15BFA489-3D01-43C4-E300-CB97A4C752CC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -1206,23 +1206,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{BD92DDAA-1DD8-E332-C5BC-54E432AE3D74}</Project>
+      <Project>{49D763FF-A6CC-42F3-851F-6D1A93526B2F}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{E885DBF4-A701-A697-42D5-2B48B03E4212}</Project>
+      <Project>{71B00AA7-6133-5E27-1B0E-35480172435E}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="com.Tivadar.Best.SocketIO.csproj">
-      <Project>{E42F8B68-133C-2E32-A3C1-70DE2F539386}</Project>
+      <Project>{083F3C57-8B6E-3647-B811-36AA98285AD7}</Project>
       <Name>com.Tivadar.Best.SocketIO</Name>
     </ProjectReference>
     <ProjectReference Include="com.Tivadar.Best.HTTP.csproj">
-      <Project>{77CE09C2-BF66-AD01-B8BE-67EADE52CA37}</Project>
+      <Project>{6513A9A1-FE0C-542F-FDE3-D548A8844FCA}</Project>
       <Name>com.Tivadar.Best.HTTP</Name>
     </ProjectReference>
     <ProjectReference Include="com.Tivadar.Best.WebSockets.csproj">
-      <Project>{E206FFF7-ABE1-18EB-82BC-961687FBE3A5}</Project>
+      <Project>{5CC9850E-2A6A-AE37-C3AC-D52F07C7A19D}</Project>
       <Name>com.Tivadar.Best.WebSockets</Name>
     </ProjectReference>
   </ItemGroup>

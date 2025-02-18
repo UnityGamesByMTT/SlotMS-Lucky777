@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>Best.HTTP</RootNamespace>
-    <ProjectGuid>{77CE09C2-BF66-AD01-B8BE-67EADE52CA37}</ProjectGuid>
+    <ProjectGuid>{6513A9A1-FE0C-542F-FDE3-D548A8844FCA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>com.Tivadar.Best.HTTP</AssemblyName>
