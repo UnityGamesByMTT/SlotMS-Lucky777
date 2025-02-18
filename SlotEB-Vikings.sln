@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.Tivadar.Best.HTTP", "com.Tivadar.Best.HTTP.csproj", "{43FDFE0B-37FD-990E-D49E-62108151A83B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{ADF7480D-A550-E0BB-767B-31F73B65C268}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{9118A812-905F-D711-ABC7-D4327734983B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{35C46756-FB9F-AA28-FCB4-1D043B0533DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.Tivadar.Best.SocketIO", "com.Tivadar.Best.SocketIO.csproj", "{CFC9CE43-EFF7-469E-8770-D238D1B8116D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.Tivadar.Best.WebSockets", "com.Tivadar.Best.WebSockets.csproj", "{22683187-5423-7A35-A053-C83172D74A8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.Tivadar.Best.HTTP.Profiler.Editor", "com.Tivadar.Best.HTTP.Profiler.Editor.csproj", "{CFFB8BCC-9733-87FA-B494-9928B2921431}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43FDFE0B-37FD-990E-D49E-62108151A83B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43FDFE0B-37FD-990E-D49E-62108151A83B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43FDFE0B-37FD-990E-D49E-62108151A83B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43FDFE0B-37FD-990E-D49E-62108151A83B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF7480D-A550-E0BB-767B-31F73B65C268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF7480D-A550-E0BB-767B-31F73B65C268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF7480D-A550-E0BB-767B-31F73B65C268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF7480D-A550-E0BB-767B-31F73B65C268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9118A812-905F-D711-ABC7-D4327734983B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9118A812-905F-D711-ABC7-D4327734983B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9118A812-905F-D711-ABC7-D4327734983B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9118A812-905F-D711-ABC7-D4327734983B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35C46756-FB9F-AA28-FCB4-1D043B0533DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C46756-FB9F-AA28-FCB4-1D043B0533DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C46756-FB9F-AA28-FCB4-1D043B0533DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C46756-FB9F-AA28-FCB4-1D043B0533DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC9CE43-EFF7-469E-8770-D238D1B8116D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC9CE43-EFF7-469E-8770-D238D1B8116D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC9CE43-EFF7-469E-8770-D238D1B8116D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC9CE43-EFF7-469E-8770-D238D1B8116D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22683187-5423-7A35-A053-C83172D74A8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22683187-5423-7A35-A053-C83172D74A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22683187-5423-7A35-A053-C83172D74A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22683187-5423-7A35-A053-C83172D74A8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFFB8BCC-9733-87FA-B494-9928B2921431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFFB8BCC-9733-87FA-B494-9928B2921431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFFB8BCC-9733-87FA-B494-9928B2921431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFFB8BCC-9733-87FA-B494-9928B2921431}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
