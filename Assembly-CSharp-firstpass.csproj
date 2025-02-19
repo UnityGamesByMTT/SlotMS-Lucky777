@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{49D763FF-A6CC-42F3-851F-6D1A93526B2F}</ProjectGuid>
+    <ProjectGuid>{C80D693D-26DA-B516-4995-57B41AB13BBF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -55,7 +55,7 @@
     <UnityVersion>2022.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.23f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.23f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -419,26 +419,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>/Applications/Unity/Hub/Editor/2022.3.23f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>/Applications/Unity/Hub/Editor/2022.3.23f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Android.Types">
-      <HintPath>/Applications/Unity/Hub/Editor/2022.3.23f1/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Android.Gradle">
-      <HintPath>/Applications/Unity/Hub/Editor/2022.3.23f1/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Android.GradleProject">
-      <HintPath>/Applications/Unity/Hub/Editor/2022.3.23f1/PlaybackEngines/AndroidPlayer/Unity.Android.GradleProject.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
@@ -1112,15 +1092,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="com.Tivadar.Best.SocketIO.csproj">
-      <Project>{083F3C57-8B6E-3647-B811-36AA98285AD7}</Project>
+      <Project>{17DC7F9E-B572-1493-0826-B7181B862E5D}</Project>
       <Name>com.Tivadar.Best.SocketIO</Name>
     </ProjectReference>
     <ProjectReference Include="com.Tivadar.Best.HTTP.csproj">
-      <Project>{6513A9A1-FE0C-542F-FDE3-D548A8844FCA}</Project>
+      <Project>{D1A632E8-508A-4EB9-6CBE-9952F323A34E}</Project>
       <Name>com.Tivadar.Best.HTTP</Name>
     </ProjectReference>
     <ProjectReference Include="com.Tivadar.Best.WebSockets.csproj">
-      <Project>{5CC9850E-2A6A-AE37-C3AC-D52F07C7A19D}</Project>
+      <Project>{96F50A7B-59B1-745D-6E2A-08AF5C8BBA17}</Project>
       <Name>com.Tivadar.Best.WebSockets</Name>
     </ProjectReference>
   </ItemGroup>

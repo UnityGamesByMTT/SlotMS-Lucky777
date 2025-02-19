@@ -10,7 +10,6 @@ public class AudioController : MonoBehaviour
     [SerializeField] internal AudioSource audioPlayer_button;
     [SerializeField] internal AudioSource audioSpin_button;
     [SerializeField] private AudioClip[] clips;
-    [SerializeField] private AudioClip[] Bonusclips;
     [SerializeField] private AudioSource bg_audioBonus;
     [SerializeField] private AudioSource audioPlayer_Bonus;
 
@@ -105,8 +104,7 @@ public class AudioController : MonoBehaviour
                 break;
         }
         StopBonusAaudio();
-        audioPlayer_Bonus.clip = Bonusclips[index];
-        audioPlayer_Bonus.Play();
+        
 
     }
 

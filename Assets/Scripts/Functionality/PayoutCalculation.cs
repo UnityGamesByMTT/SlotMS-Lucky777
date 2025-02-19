@@ -31,7 +31,7 @@ public class PayoutCalculation : MonoBehaviour
     public SlotBehaviour slotmanager;
 
     //generate lines at runtime accordingly
-    internal void generateLinesAnimTest(List<int> y_index)
+    internal void generateLinesAnim(List<int> y_index,List<string> points_AnimString)
     {
         if (slotmanager.IsTurboOn)
         {
@@ -48,35 +48,7 @@ public class PayoutCalculation : MonoBehaviour
         
     }
 
-    //private void OnEnable()
-    //{
-    //    generateLinesAnimTest();
-    //}
-
-    internal void GeneratePayoutLinesBackend(List<int> y_index, int Count, bool isStatic = false)
-    {
-
-        generateLinesAnimTest(y_index);
-        //GameObject MyLineObj = Instantiate(Line_Prefab, LineContainer);
-        //MyLineObj.transform.localPosition = new Vector2(InitialLinePosition.x, InitialLinePosition.y);
-        //UILineRenderer MyLine = MyLineObj.GetComponent<UILineRenderer>();
-        //for (int i = 0; i < Count; i++)
-        //{
-        //    var points = new Vector2() { x = i * x_Distance, y = y_index[i] * -y_Distance };
-        //    var pointlist = new List<Vector2>(MyLine.Points);
-        //    pointlist.Add(points);
-        //    MyLine.Points = pointlist.ToArray();
-        //}
-        //var newpointlist = new List<Vector2>(MyLine.Points);
-        //newpointlist.RemoveAt(0);
-        //MyLine.Points = newpointlist.ToArray();
-
-        //if (isStatic)
-        //{
-        //    TempObj = MyLineObj;
-        //}
-    }
-
+  
     IEnumerator linePathTrace(List<int> linePosList,UILineRenderer myLine)
     {
         Color col = new Color(Random.Range(255f, 210f), Random.Range(255f, 210f), Random.Range(255f, 210f), 1f);
@@ -108,7 +80,7 @@ public class PayoutCalculation : MonoBehaviour
                 }
             }  
         }
-
+        slotmanager.LinesAnimDone = true;
         
     }
 
@@ -125,6 +97,8 @@ public class PayoutCalculation : MonoBehaviour
     //delete all lines
     internal void ResetLines()
     {
+        slotmanager.LinesAnimDone = true;
+        slotmanager.skipImageAnimation = true;
         for (int i = 0; i < linePath.Count; i++)
         {
             StopCoroutine(linePath[i]);
@@ -133,5 +107,6 @@ public class PayoutCalculation : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+        slotmanager.StopGameAnimation();
     }
 }
