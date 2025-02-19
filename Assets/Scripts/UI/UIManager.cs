@@ -62,16 +62,7 @@ public class UIManager : MonoBehaviour
     private Button PaytableExit_Button;
     [SerializeField]
     private TMP_Text[] SymbolsText;
-    [SerializeField]
-    private TMP_Text FreeSpin_Text;
-    [SerializeField]
-    private TMP_Text Scatter_Text;
-    [SerializeField]
-    private TMP_Text Jackpot_Text;
-    [SerializeField]
-    private TMP_Text Bonus_Text;
-    [SerializeField]
-    private TMP_Text Wild_Text;
+   
 
     [Header("Settings Popup")]
     [SerializeField]
@@ -302,26 +293,7 @@ public class UIManager : MonoBehaviour
         StartPopupAnim(amount);
     }
 
-    //private void StartFreeSpins(int spins)
-    //{
-    //    if (MainPopup_Object) MainPopup_Object.SetActive(false);
-    //    if (FreeSpinPopup_Object) FreeSpinPopup_Object.SetActive(false);
-    //    slotManager.FreeSpin(spins);
-    //}
-
-    //internal void FreeSpinProcess(int spins)
-    //{
-    //    int ExtraSpins=spins-FreeSpins;
-    //    FreeSpins=spins;
-    //    Debug.Log("ExtraSpins: " +ExtraSpins);
-    //    Debug.Log("Total Spins: " +spins);
-    //    if (FreeSpinPopup_Object) FreeSpinPopup_Object.SetActive(true);           
-    //    if (Free_Text) Free_Text.text = ExtraSpins.ToString() + " Free spins awarded.";
-    //    if (MainPopup_Object) MainPopup_Object.SetActive(true);
-    //    DOVirtual.DelayedCall(2f, ()=>{
-    //        StartFreeSpins(spins);
-    //    });
-    //}
+   
 
     void SkipWin(){
         Debug.Log("Skip win called");
@@ -359,7 +331,7 @@ public class UIManager : MonoBehaviour
         OpenPopup(ADPopup_Object); 
     }
 
-    internal void InitialiseUIData(string SupportUrl, string AbtImgUrl, string TermsUrl, string PrivacyUrl, Paylines symbolsText)
+    internal void InitialiseUIData(string SupportUrl, string AbtImgUrl, string TermsUrl, string PrivacyUrl)
     {
         if (Support_Button) Support_Button.onClick.RemoveAllListeners();
         if (Support_Button) Support_Button.onClick.AddListener(delegate { UrlButtons(SupportUrl); });
@@ -371,52 +343,26 @@ public class UIManager : MonoBehaviour
         if (Privacy_Button) Privacy_Button.onClick.AddListener(delegate { UrlButtons(PrivacyUrl); });
 
         StartCoroutine(DownloadImage(AbtImgUrl));
-        PopulateSymbolsPayout(symbolsText);
+        PopulateSymbolsPayout();
     }
 
-    private void PopulateSymbolsPayout(Paylines paylines)
+    private void PopulateSymbolsPayout()
     {
-        //for (int i = 0; i < SymbolsText.Length; i++)
-        //{
-        //    string text = null;
-        //    if (paylines.symbols[i].Multiplier[0][0] != 0)
-        //    {
-        //        text += "5x - " + paylines.symbols[i].Multiplier[0][0]+"x";
-        //    }
-        //    if (paylines.symbols[i].Multiplier[1][0] != 0)
-        //    {
-        //        text += "\n4x - " + paylines.symbols[i].Multiplier[1][0]+"x";
-        //    }
-        //    if (paylines.symbols[i].Multiplier[2][0] != 0)
-        //    {
-        //        text += "\n3x - " + paylines.symbols[i].Multiplier[2][0]+"x";
-        //    }
-        //    if (SymbolsText[i]) SymbolsText[i].text = text;
-        //}
+    
+        SymbolsText[0].text = socketManager.initialData.paytable[0].payout.ToString() + "X";
+        SymbolsText[1].text = socketManager.initialData.paytable[1].payout.ToString() + "X";
+        SymbolsText[2].text = socketManager.initialData.paytable[2].payout.ToString() + "X";
+        SymbolsText[3].text = socketManager.initialData.paytable[3].payout.ToString() + "X";
+        SymbolsText[4].text = socketManager.initialData.paytable[4].payout.ToString() + "X";
+        SymbolsText[5].text = socketManager.initialData.paytable[5].payout.ToString() + "X";
+        SymbolsText[6].text = socketManager.initialData.paytable[6].payout.ToString() + "X";
+        SymbolsText[7].text = socketManager.initialData.paytable[7].payout.ToString() + "X";
+        SymbolsText[8].text = socketManager.initialData.paytable[14].payout.ToString() + "X";
+        SymbolsText[9].text = socketManager.initialData.paytable[14].payout.ToString() + "X";
+        SymbolsText[10].text = socketManager.initialData.paytable[14].payout.ToString() + "X";
+        SymbolsText[11].text = socketManager.initialData.paytable[19].payout.ToString() + "X";
+      
 
-        //for (int i = 0; i < paylines.symbols.Count; i++)
-        //{
-        //    if (paylines.symbols[i].Name.ToUpper() == "FREESPIN")
-        //    {
-        //        if (FreeSpin_Text) FreeSpin_Text.text = paylines.symbols[i].description.ToString();
-        //    }
-        //    if (paylines.symbols[i].Name.ToUpper() == "SCATTER")
-        //    {
-        //        if (Scatter_Text) Scatter_Text.text = paylines.symbols[i].description.ToString();
-        //    }
-        //    if (paylines.symbols[i].Name.ToUpper() == "JACKPOT")
-        //    {
-        //        if (Jackpot_Text) Jackpot_Text.text = paylines.symbols[i].description.ToString();
-        //    }
-        //    if (paylines.symbols[i].Name.ToUpper() == "BONUS")
-        //    {
-        //        if (Bonus_Text) Bonus_Text.text = paylines.symbols[i].description.ToString();
-        //    }
-        //    if (paylines.symbols[i].Name.ToUpper() == "WILD")
-        //    {
-        //        if (Wild_Text) Wild_Text.text = paylines.symbols[i].description.ToString();
-        //    }
-        //}
     }
 
     private void CallOnExitFunction()
@@ -500,6 +446,7 @@ public class UIManager : MonoBehaviour
     private void ToggleMusic()
     {
         isMusic = !isMusic;
+        if (audioController) audioController.PlayButtonAudio();
         if (isMusic)
         {
             if (MusicOn_Object) MusicOn_Object.SetActive(true);
@@ -522,6 +469,7 @@ public class UIManager : MonoBehaviour
     private void ToggleSound()
     {
         isSound = !isSound;
+        if (audioController) audioController.PlayButtonAudio();
         if (isSound)
         {
             if (SoundOn_Object) SoundOn_Object.SetActive(true);
