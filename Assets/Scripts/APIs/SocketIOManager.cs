@@ -43,8 +43,8 @@ public class SocketIOManager : MonoBehaviour
     [SerializeField]
     private string testToken;
 
-    protected string gameID = "SL-LS";
-    //protected string gameID = "";
+    //protected string gameID = "SL-LS";
+    protected string gameID = "";
 
     internal bool isLoaded = false;
 
@@ -321,7 +321,7 @@ public class SocketIOManager : MonoBehaviour
 
     private void RefreshUI()
     {
-        uiManager.InitialiseUIData(initUIData.AbtLogo.link, initUIData.AbtLogo.logoSprite, initUIData.ToULink, initUIData.PopLink);
+        uiManager.InitialiseUIData(initUIData.AbtLogo.link, initUIData.AbtLogo.logoSprite, initUIData.ToULink, initUIData.PopLink, initUIData.paylines);
     }
 
     private void PopulateSlotSocket(List<string> slotPop, List<string> LineIds)
@@ -466,6 +466,7 @@ public class GameData
     public List<List<string>> Reel { get; set; }
     public List<List<int>> linesApiData { get; set; }
     public List<Paytable> paytable { get; set; }
+    public int jackpotMultiplier { get; set; }
     public List<double> Bets { get; set; }
     public bool canSwitchLines { get; set; }
     public List<int> LinesCount { get; set; }
@@ -493,7 +494,7 @@ public class FreeSpins
 public class Paytable
 {
     public List<string> combination { get; set; }
-    public int payout { get; set; }
+    public float payout { get; set; }
 }
 
 [Serializable]
