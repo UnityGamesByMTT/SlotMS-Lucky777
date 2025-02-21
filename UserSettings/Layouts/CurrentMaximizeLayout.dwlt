@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 28839
+  controlID: 30230
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -46,9 +46,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 859
+    x: 580
     y: 83
-    width: 959
+    width: 1238
     height: 473
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -102,23 +102,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 959
+      width: 1238
       height: 452
-    m_Scale: {x: 0.40982905, y: 0.40982902}
-    m_Translation: {x: 479.5, y: 226}
+    m_Scale: {x: 0.4185185, y: 0.4185185}
+    m_Translation: {x: 619, y: 226}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1170
-      y: -551.44946
-      width: 2340
-      height: 1102.8989
+      x: -1479.0266
+      y: -540
+      width: 2958.0532
+      height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 0.40982905
-  m_LastWindowPixelSize: {x: 959, y: 473}
+  m_defaultScale: 0.4185185
+  m_LastWindowPixelSize: {x: 1238, y: 473}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000
@@ -187,8 +187,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 22740000
-      m_LastClickedID: 29730
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: 9cd4ffff1afbffffea7200003e76000096760000fe760000067900000c790000c8790000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 28840
+  controlID: 30231
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 28841
+  controlID: 30232
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -280,7 +280,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 511
+    width: 232
     height: 494
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
@@ -311,7 +311,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 348
     y: 83
-    width: 509
+    width: 230
     height: 473
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -739,9 +739,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 511
+    x: 232
     y: 0
-    width: 961
+    width: 1240
     height: 494
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -799,9 +799,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 348
-    y: 676
-    width: 1231
-    height: 278
+    y: 577
+    width: 1470
+    height: 377
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -823,7 +823,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Graphics/Lucky 777 (lite)/Animation/winTable
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -831,15 +831,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 90
   m_LastFolders:
-  - Assets/Graphics/Lucky 777 (lite)/Animation/winTable
+  - Assets
   m_LastFoldersGridSize: 90
   m_LastProjectPath: /Users/meet/SlotMS-Lucky777
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 190}
-    m_SelectedIDs: daee0200
-    m_LastClickedID: 192218
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 40820000
+    m_LastClickedID: 33344
     m_ExpandedIDs: 000000004082000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -893,9 +893,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 22740000
-    m_LastClickedInstanceID: 29730
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 9ccb00007ad000000acb0000aa810000568100005e810000b4fc0000a47e0000767e00004c7e0000f67e0000387f0000207f0000b87f0000227f0000ac7f000064dc0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

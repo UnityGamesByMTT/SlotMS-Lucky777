@@ -183,8 +183,12 @@ public class UIManager : MonoBehaviour
         if (Menu_Button) Menu_Button.onClick.RemoveAllListeners();
         if (Menu_Button) Menu_Button.onClick.AddListener(OpenMenu);
 
-        if (Exit_Button) Close_Menu_Button.onClick.RemoveAllListeners();
-        if (Exit_Button) Close_Menu_Button.onClick.AddListener(CallOnExitFunction);
+        if (Exit_Button) Exit_Button.onClick.RemoveAllListeners();
+        if (Exit_Button) Exit_Button.onClick.AddListener(delegate {
+            OpenPopup(QuitPopup_Object);
+            Debug.Log("Quit event: pressed Big_X button");
+
+        });
 
         //if (About_Button) About_Button.onClick.RemoveAllListeners();
         //if (About_Button) About_Button.onClick.AddListener(delegate { OpenPopup(AboutPopup_Object); });
@@ -370,7 +374,7 @@ public class UIManager : MonoBehaviour
         for (int i = 0; i < paylines.symbols.Count; i++)
         {
            
-            if (paylines.symbols[i].Name.ToUpper() == "WILD")
+            if (paylines.symbols[i].Name == "6")
             {
               
                 if (Wild_Text) Wild_Text.text = paylines.symbols[i].description.ToString();
@@ -444,6 +448,7 @@ public class UIManager : MonoBehaviour
 
     private void OpenPopup(GameObject Popup)
     {
+        Debug.Log("mainExitPressed");
         if (audioController) audioController.PlayButtonAudio();
         if (Popup) Popup.SetActive(true);
         if (MainPopup_Object) MainPopup_Object.SetActive(true);
