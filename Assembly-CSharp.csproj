@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E885DBF4-A701-A697-42D5-2B48B03E4212}</ProjectGuid>
+    <ProjectGuid>{8F9C8D95-6B28-08E4-9444-D0B274472A15}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -55,7 +55,7 @@
     <UnityVersion>2022.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.23f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.23f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -178,7 +178,6 @@
     <Compile Include="Assets/com.unity.uiextensions/Runtime/Scripts/Controls/ComboBox/DropDownListButton.cs" />
     <Compile Include="Assets/com.unity.uiextensions/Runtime/Scripts/Layout/FancyScrollView/ScrollRect/FancyScrollRectContext.cs" />
     <Compile Include="Assets/HttpServices/Http.cs" />
-    <Compile Include="Assets/Scripts/Functionality/BonusController.cs" />
     <Compile Include="Assets/com.unity.uiextensions/Runtime/Scripts/Controls/ComboBox/DropDownList.cs" />
     <Compile Include="Assets/com.unity.uiextensions/Runtime/Scripts/Controls/ColorPicker/TiltWindow.cs" />
     <Compile Include="Assets/com.unity.uiextensions/Runtime/Scripts/Utilities/InputFieldEnterSubmit.cs" />
@@ -624,26 +623,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>/Applications/Unity/Hub/Editor/2022.3.23f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>/Applications/Unity/Hub/Editor/2022.3.23f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Android.Types">
-      <HintPath>/Applications/Unity/Hub/Editor/2022.3.23f1/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Android.Gradle">
-      <HintPath>/Applications/Unity/Hub/Editor/2022.3.23f1/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Android.GradleProject">
-      <HintPath>/Applications/Unity/Hub/Editor/2022.3.23f1/PlaybackEngines/AndroidPlayer/Unity.Android.GradleProject.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
@@ -1317,19 +1296,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{BD92DDAA-1DD8-E332-C5BC-54E432AE3D74}</Project>
+      <Project>{C80D693D-26DA-B516-4995-57B41AB13BBF}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="com.Tivadar.Best.SocketIO.csproj">
-      <Project>{E42F8B68-133C-2E32-A3C1-70DE2F539386}</Project>
+      <Project>{17DC7F9E-B572-1493-0826-B7181B862E5D}</Project>
       <Name>com.Tivadar.Best.SocketIO</Name>
     </ProjectReference>
     <ProjectReference Include="com.Tivadar.Best.HTTP.csproj">
-      <Project>{77CE09C2-BF66-AD01-B8BE-67EADE52CA37}</Project>
+      <Project>{D1A632E8-508A-4EB9-6CBE-9952F323A34E}</Project>
       <Name>com.Tivadar.Best.HTTP</Name>
     </ProjectReference>
     <ProjectReference Include="com.Tivadar.Best.WebSockets.csproj">
-      <Project>{E206FFF7-ABE1-18EB-82BC-961687FBE3A5}</Project>
+      <Project>{96F50A7B-59B1-745D-6E2A-08AF5C8BBA17}</Project>
       <Name>com.Tivadar.Best.WebSockets</Name>
     </ProjectReference>
   </ItemGroup>

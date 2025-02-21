@@ -22,7 +22,7 @@ public class ImageAnimation : MonoBehaviour
 	public bool doLoopAnimation = true;
 	[SerializeField] private bool StartOnAwake;
 
-	[HideInInspector]
+	
 	public ImageState currentAnimationState;
 
 	private int indexOfTexture;
@@ -41,7 +41,7 @@ public class ImageAnimation : MonoBehaviour
 		{
 			Instance = this;
 		}
-		if(StartOnAwake){
+		if (StartOnAwake){
 			StartAnimation();
 		}
 	}
@@ -78,6 +78,7 @@ public class ImageAnimation : MonoBehaviour
 	public void StartAnimation()
 	{
 		indexOfTexture = 0;
+		
 		if (currentAnimationState == ImageState.NONE)
 		{
 			RevertToInitialState();

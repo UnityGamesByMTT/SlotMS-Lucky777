@@ -38,13 +38,13 @@ public class SocketIOManager : MonoBehaviour
 
     protected string SocketURI = null;
     // protected string TestSocketURI = "https://game-crm-rtp-backend.onrender.com/";
-    protected string TestSocketURI = "http://localhost:5000/";
+    protected string TestSocketURI = "http://localhost:5001/";
 
     [SerializeField]
     private string testToken;
 
-   // protected string gameID = "SL-VIK";
-    protected string gameID = "";
+    protected string gameID = "SL-LS";
+    //protected string gameID = "";
 
     internal bool isLoaded = false;
 
@@ -261,7 +261,7 @@ public class SocketIOManager : MonoBehaviour
 
 
 
-    internal void CloseSocket()
+    public void CloseSocket()
     {
         SendDataWithNamespace("EXIT");
     }
@@ -465,6 +465,8 @@ public class GameData
 {
     public List<List<string>> Reel { get; set; }
     public List<List<int>> linesApiData { get; set; }
+    public List<Paytable> paytable { get; set; }
+    public int jackpotMultiplier { get; set; }
     public List<double> Bets { get; set; }
     public bool canSwitchLines { get; set; }
     public List<int> LinesCount { get; set; }
@@ -486,6 +488,13 @@ public class FreeSpins
 {
     public int count { get; set; }
     public bool isNewAdded { get; set; }
+}
+
+[Serializable]
+public class Paytable
+{
+    public List<string> combination { get; set; }
+    public float payout { get; set; }
 }
 
 [Serializable]
