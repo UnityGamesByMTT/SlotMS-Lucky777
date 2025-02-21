@@ -374,7 +374,7 @@ public class SlotBehaviour : MonoBehaviour
         currentBalance = SocketManager.playerdata.Balance;
         currentTotalBet = SocketManager.initialData.Bets[BetCounter] * Lines;
         CompareBalance();
-        uiManager.InitialiseUIData(SocketManager.initUIData.AbtLogo.link, SocketManager.initUIData.AbtLogo.logoSprite, SocketManager.initUIData.ToULink, SocketManager.initUIData.PopLink);
+        uiManager.InitialiseUIData(SocketManager.initUIData.AbtLogo.link, SocketManager.initUIData.AbtLogo.logoSprite, SocketManager.initUIData.ToULink, SocketManager.initUIData.PopLink, SocketManager.initUIData.paylines);
     }
     #endregion
 
@@ -607,23 +607,7 @@ public class SlotBehaviour : MonoBehaviour
 
     internal void CheckWinPopups()
     {
-        Debug.Log("checkwinPopupsCalled");
-        if (SocketManager.resultData.WinAmout >= currentTotalBet * 10 && SocketManager.resultData.WinAmout < currentTotalBet * 15)
-        {
-            uiManager.PopulateWin(1, SocketManager.resultData.WinAmout);
-        }
-        else if (SocketManager.resultData.WinAmout >= currentTotalBet * 15 && SocketManager.resultData.WinAmout < currentTotalBet * 20)
-        {
-            uiManager.PopulateWin(2, SocketManager.resultData.WinAmout);
-        }
-        else if (SocketManager.resultData.WinAmout >= currentTotalBet * 20)
-        {
-            uiManager.PopulateWin(3, SocketManager.resultData.WinAmout);
-        }
-        else
-        {
-            CheckPopups = false;
-        }
+        CheckPopups = false;
     }
 
  
