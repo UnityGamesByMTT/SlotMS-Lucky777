@@ -56,6 +56,7 @@ public class SocketIOManager : MonoBehaviour
     private void Awake()
     {
         //Debug.unityLogger.logEnabled = false;
+        Debug.Log(DateTime.Now);
         isLoaded = false;
         SetInit = false;
 
