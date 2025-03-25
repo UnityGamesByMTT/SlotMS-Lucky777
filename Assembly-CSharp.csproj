@@ -110,6 +110,7 @@
     <Compile Include="Assets/HttpServices/Service/IHttpRequest.cs" />
     <Compile Include="Assets/HttpServices/Service/IHttpService.cs" />
     <Compile Include="Assets/com.unity.uiextensions/Runtime/Scripts/Layout/FancyScrollView/Scroller/Scroller.cs" />
+    <Compile Include="Assets/Scripts/JSFunctCalls.cs" />
     <Compile Include="Assets/com.unity.uiextensions/Runtime/Scripts/Effects/ShaderEffects/UIAdditiveEffect.cs" />
     <Compile Include="Assets/com.unity.uiextensions/Runtime/Scripts/Controls/ReorderableList/ReorderableListElement.cs" />
     <Compile Include="Assets/com.unity.uiextensions/Runtime/Scripts/Utilities/UI_MagneticInfiniteScroll.cs" />
