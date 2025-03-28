@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>{{{ PRODUCT_NAME }}}</title>
+  <title>Vikings</title>
   <style>
     body,
     html {
@@ -69,28 +69,17 @@
     });
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
+    var loaderUrl = buildUrl + "/WebGL.loader.js";
     console.log("Loader URL: ", loaderUrl);
     
     var config = {
-      dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
-      frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
-      #if USE_THREADS
-      workerUrl: buildUrl + "/{{{ WORKER_FILENAME }}}",
-      #endif
-      #if USE_WASM
-      codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
-      #endif
-      #if MEMORY_FILENAME
-      memoryUrl: buildUrl + "/{{{ MEMORY_FILENAME }}}",
-      #endif
-      #if SYMBOLS_FILENAME
-      symbolsUrl: buildUrl + "/{{{ SYMBOLS_FILENAME }}}",
-      #endif
+      dataUrl: buildUrl + "/WebGL.data.unityweb",
+      frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb",
+      codeUrl: buildUrl + "/WebGL.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
-      companyName: {{{ JSON.stringify(COMPANY_NAME) }}},
-      productName: {{{ JSON.stringify(PRODUCT_NAME) }}},
-      productVersion: {{{ JSON.stringify(PRODUCT_VERSION) }}},
+      companyName: "DefaultCompany",
+      productName: "Vikings",
+      productVersion: "0.0.34",
     };
 
     console.log("Config loaded: ", config);
